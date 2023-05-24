@@ -24,6 +24,14 @@ const PopularMenue = () => {
 				{menu.map((item) => (
 					<MenuItem key={item._id} item={item}></MenuItem>
 				))}
+				<div className="text-center ml-[450px]">
+					<button className="btn btn-outline border-0 border-b-4 mt-5">
+						View full menu
+					</button>
+				</div>
+			</div>
+			<div className="bg-black p-12 text-2xl mt-3 text-center text-white">
+				<h1>Call Us: +88 0192345678910</h1>
 			</div>
 		</div>
 	);

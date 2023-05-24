@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 import SectionTittle from "../../../components/SectionTittle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
@@ -7,7 +8,6 @@ import "swiper/css/navigation";
 import { useEffect, useState } from "react";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
-
 const Testimonial = () => {
 	const [reviews, setReviews] = useState([]);
 	useEffect(() => {
@@ -26,6 +26,7 @@ const Testimonial = () => {
 					<SwiperSlide key={review._id}>
 						<div className="mx-20 my-10 flex flex-col justify-center items-center space-y-3 p-20">
 							<Rating
+								className="mb-20"
 								style={{ maxWidth: 180 }}
 								value={review.rating}
 								readOnly
